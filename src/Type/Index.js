@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 
 // Styles.
 
-import  "./Style.css";
+import "./Style.css";
+
+// Component
+
+import Input from "../Input";
 
 class Type extends Component {
     constructor(props) {
@@ -14,7 +18,17 @@ class Type extends Component {
     render() {
         return (
             <div>
-                <p >dsdf</p>
+                <p >
+                    <table >
+                        <tr>
+                            <th>
+                                <Input value="Firstname"/></th>
+                        </tr>
+                        <tr>
+                            <td> <Input value="Firstname"/></td>
+                        </tr>
+                    </table>
+                </p>
             </div>
         );
     }
