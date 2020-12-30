@@ -1,0 +1,83 @@
+body {
+    position:relative;
+    color: #d9d9d9;
+    font-family: "Nunito Sans",-apple-system,".SFNSText-Regular","San Francisco",BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0px;
+    background: black;
+}
+
+li , label, p, .rules , input, textarea{
+    font-size: 9px;
+}
+
+input, textarea { 
+    background: #2b2b2b;
+    color: #d9d9d9;
+    opacity: 0.75;
+    vertical-align: bottom;
+}
+
+input[type="text"] {
+    -webkit-appearance: textarea;
+    color: rgba(255,255,255,0.5);
+    border-color: rgba(0,0,0,0.9);
+    border-width: 1px;
+    padding: 7px;
+}
+
+ul label input {
+    width: 10px;
+}
+
+ul, li {
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+button, select{
+    color: rgba(255,255,255,0.5);
+    border-color: rgba(0,0,0,0.9);
+    border-width: 1px;
+    padding: 5px;
+    background-color: #343a40;
+    margin-left: 4px;
+}
+
+select:focus{
+    
+    outline: 1px solid white;
+}
+
+button i{
+    padding-right:4px;
+}
+
+select:focus, 
+button:hover,
+ul label:hover, 
+li:hover, 
+.content:hover {
+    color: #fff;
+    background: rgb(43, 43, 43);
+}
+
+ul,li, ul label {
+    color: rgba(255,255,255,0.5);
+}
+
+
+#index{
+    margin:-4px;
+}
+
+.CodeMirror {
+    border: 1px solid black;
+    margin-top:5px;
+}
+
+.container{
+    padding: 5px;
+    background: #2C3134;
+}
+
