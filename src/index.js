@@ -19,7 +19,7 @@ class Index extends Component {
     render() {
 
         return (
-            <div> hello<Type/>
+            <div><Type/>
             </div>
         );
     }

@@ -6,8 +6,6 @@ import "./Style.css";
 
 // Component
 
-import Input from "../Input";
-
 class Type extends Component {
     constructor(props) {
         super(props);
@@ -18,17 +16,7 @@ class Type extends Component {
     render() {
         return (
             <div>
-                <p >
-                    <table >
-                        <tr>
-                            <th>
-                                <Input value="Firstname"/></th>
-                        </tr>
-                        <tr>
-                            <td> <Input value="Firstname"/></td>
-                        </tr>
-                    </table>
-                </p>
+                Type
             </div>
         );
     }
