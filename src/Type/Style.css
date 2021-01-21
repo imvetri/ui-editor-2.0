@@ -1,6 +1,18 @@
 
 /* Show selected asset with a light dashed outline */
 
-.selectedAsset{
-    border: 1px lightgray dashed;
+
+.list textarea{
+    border: 1px lightgray solid;
+    display: block;
+    width:200px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.panel{
+    border:1px solid grey;
+    max-width: 210px;
+    padding:5px;
+    box-sizing: border-box;
 }
