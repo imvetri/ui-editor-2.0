@@ -1,0 +1,23 @@
+
+/* Show selected asset with a light dashed outline */
+
+
+.attributes .list textarea{
+    border: 1px lightgray solid;
+    display: inline;
+    width:200px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.attributes{
+    border:1px solid grey;
+    max-width: 440px;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+.attributes textarea:focus{
+    border:2px lime solid;
+    outline:none !important;
+}
