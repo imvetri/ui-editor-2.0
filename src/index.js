@@ -8,6 +8,7 @@ import "./Index/index.css";
 
 // Components
 import Type from "./Type";
+import Attributes from "./Attributes";
 
 
 class Index extends Component {
@@ -19,11 +20,16 @@ class Index extends Component {
         console.log(types, selected)
     }
 
+    onAttributesChanged(attributes){
+        console.log(attributes)
+    }
 
     render() {
 
         return (
-            <div><Type onChanged={this.onTypesChanged.bind(this)}/>
+            <div>
+                <Type onChanged={this.onTypesChanged.bind(this)}/>
+                <Attributes onChanged={this.onAttributesChanged.bind(this)}/>
             </div>
         );
     }
