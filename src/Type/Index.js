@@ -20,10 +20,7 @@ class Type extends Component {
         this.setState({
             types: types
         })
-<<<<<<< HEAD
         this.onChange(e);
-=======
->>>>>>> e18aa9f623139daa0088d9454c49299dc23e7967
     }
 
     addInput(){
@@ -44,28 +41,21 @@ class Type extends Component {
         })
     }
 
-<<<<<<< HEAD
     onChange(e){
         if(this.props.onChange){
             this.props.onChange(this.state, e.currentTarget.value)
         }
     }
 
-=======
->>>>>>> e18aa9f623139daa0088d9454c49299dc23e7967
     render() {
         return (
             <div className="panel">
                 <header>Type</header>
                 <div className="list">
-<<<<<<< HEAD
                     {this.state.types.map((type, index)=><textarea value={type} key={index} index={index} 
                         onChange={this.updateChanges.bind(this)} 
                         onBlur={this.deleteIfEmpty.bind(this)}
                         onFocus={this.onChange.bind(this)}/>)}
-=======
-                    {this.state.types.map((type, index)=><textarea value={type} key={index} index={index} onChange={this.updateChanges.bind(this)} onBlur={this.deleteIfEmpty.bind(this)}/>)}
->>>>>>> e18aa9f623139daa0088d9454c49299dc23e7967
                 </div>
                 <button onClick={this.addInput.bind(this)}>Add</button>
             </div>

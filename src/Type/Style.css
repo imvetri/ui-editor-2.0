@@ -15,12 +15,9 @@
     max-width: 210px;
     padding:5px;
     box-sizing: border-box;
-<<<<<<< HEAD
 }
 
 .panel textarea:focus{
     border:2px lime solid;
     outline:none !important;
-=======
->>>>>>> e18aa9f623139daa0088d9454c49299dc23e7967
 }
