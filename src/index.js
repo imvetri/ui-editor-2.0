@@ -15,11 +15,15 @@ class Index extends Component {
         super(props);
     }
 
+    onTypesChanged(types, selected){
+        console.log(types, selected)
+    }
+
 
     render() {
 
         return (
-            <div><Type/>
+            <div><Type onChanged={this.onTypesChanged.bind(this)}/>
             </div>
         );
     }

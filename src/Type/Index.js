@@ -20,7 +20,7 @@ class Type extends Component {
         this.setState({
             types: types
         })
-        this.onChange();
+        this.onChange(e);
     }
 
     addInput(){
@@ -41,9 +41,9 @@ class Type extends Component {
         })
     }
 
-    onChange(){
+    onChange(e){
         if(this.props.onChange){
-            this.props.onChange(this.state)
+            this.props.onChange(this.state, e.currentTarget.value)
         }
     }
 
