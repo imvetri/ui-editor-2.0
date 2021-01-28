@@ -13,7 +13,7 @@ import Events from "./Components/Events";
 import Content from "./Components/Content";
 import Properties from "./Components/Properties";
 
-//Utilities
+// Component Utilities
 import Draggable from "./Components/Utilities/Draggable";
 
 class Index extends Component {
