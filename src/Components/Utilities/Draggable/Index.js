@@ -12,12 +12,9 @@ import {get,set} from "../../../Utilities/Storage";
 class Draggable extends Component {
     constructor(props) {
         super(props);
+        let style = get(this.props.type)  || {};
         this.state = {
-            style:{
-                position:"",
-                left: get(this.props.type) && get(this.props.type).left || "",
-                top: get(this.props.type) && get(this.props.type).top || "",
-            }
+            style: style
         };
     }
 
