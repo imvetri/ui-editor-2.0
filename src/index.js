@@ -11,6 +11,7 @@ import Type from "./Type";
 import Attributes from "./Attributes";
 import Events from "./Events";
 import Content from "./Content";
+import Properties from "./Properties";
 
 
 class Index extends Component {
@@ -40,6 +41,7 @@ class Index extends Component {
                 <Attributes onChanged={this.onAttributesChanged.bind(this)}/>
                 <Events onChanged={this.onEventsChanged.bind(this)}/>
                 <Content onChanged={this.onContentChanged.bind(this)}/>
+                <Properties/>
             </div>
         );
     }
