@@ -10,6 +10,7 @@ import "./Index/index.css";
 import Type from "./Type";
 import Attributes from "./Attributes";
 import Events from "./Events";
+import Content from "./Content";
 
 
 class Index extends Component {
@@ -27,6 +28,9 @@ class Index extends Component {
     onEventsChanged(events){
         console.log(events)
     }
+    onContentChanged(content){
+        console.log(content)
+    }
 
     render() {
 
@@ -35,6 +39,7 @@ class Index extends Component {
                 <Type onChanged={this.onTypesChanged.bind(this)}/>
                 <Attributes onChanged={this.onAttributesChanged.bind(this)}/>
                 <Events onChanged={this.onEventsChanged.bind(this)}/>
+                <Content onChanged={this.onContentChanged.bind(this)}/>
             </div>
         );
     }
