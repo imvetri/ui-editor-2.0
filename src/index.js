@@ -13,6 +13,8 @@ import Events from "./Events";
 import Content from "./Content";
 import Properties from "./Properties";
 
+//Utilities
+import Draggable from "./Utilities/Draggable";
 
 class Index extends Component {
     constructor(props) {
@@ -33,15 +35,29 @@ class Index extends Component {
         console.log(content)
     }
 
+    allowDrop(ev){
+        ev.preventDefault();
+    }
+
     render() {
 
         return (
-            <div>
-                <Type onChanged={this.onTypesChanged.bind(this)}/>
-                <Attributes onChanged={this.onAttributesChanged.bind(this)}/>
-                <Events onChanged={this.onEventsChanged.bind(this)}/>
-                <Content onChanged={this.onContentChanged.bind(this)}/>
-                <Properties/>
+            <div  onDragOver={this.allowDrop.bind(this)}>
+                <Draggable>
+                    <Type onChanged={this.onTypesChanged.bind(this)}/>
+                </Draggable>
+                <Draggable>
+                    <Attributes onChanged={this.onAttributesChanged.bind(this)}/>
+                </Draggable>
+                <Draggable>
+                    <Events onChanged={this.onEventsChanged.bind(this)}/>
+                </Draggable>
+                <Draggable>
+                    <Content onChanged={this.onContentChanged.bind(this)}/>
+                </Draggable>
+                <Draggable>
+                    <Properties/>
+                </Draggable>
             </div>
         );
     }
