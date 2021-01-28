@@ -9,9 +9,7 @@ import "./Style.css";
 class Draggable extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            dragPointer: "showDragable"
-         };
+        this.state = {};
     }
 
     startDrag(){

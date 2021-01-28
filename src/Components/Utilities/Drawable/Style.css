@@ -1,0 +1,18 @@
+/*
+on mouse over
+*/
+.showDragable{
+    cursor:grab;
+}
+
+/*
+on drag start
+*/
+.startDrag{
+    cursor:grabbing;
+}
+
+
+[draggable=true] {
+    cursor: move;
+  }

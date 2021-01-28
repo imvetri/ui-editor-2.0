@@ -7,14 +7,14 @@ import ReactDOM from "react-dom";
 import "./Index/index.css";
 
 // Components
-import Type from "./Type";
-import Attributes from "./Attributes";
-import Events from "./Events";
-import Content from "./Content";
-import Properties from "./Properties";
+import Type from "./Components/Type";
+import Attributes from "./Components/Attributes";
+import Events from "./Components/Events";
+import Content from "./Components/Content";
+import Properties from "./Components/Properties";
 
 //Utilities
-import Draggable from "./Utilities/Draggable";
+import Draggable from "./Components/Utilities/Draggable";
 
 class Index extends Component {
     constructor(props) {
@@ -43,19 +43,19 @@ class Index extends Component {
 
         return (
             <div  onDragOver={this.allowDrop.bind(this)}>
-                <Draggable>
+                <Draggable type="Type">
                     <Type onChanged={this.onTypesChanged.bind(this)}/>
                 </Draggable>
-                <Draggable>
+                <Draggable type="Attributes">
                     <Attributes onChanged={this.onAttributesChanged.bind(this)}/>
                 </Draggable>
-                <Draggable>
+                <Draggable type="Events">
                     <Events onChanged={this.onEventsChanged.bind(this)}/>
                 </Draggable>
-                <Draggable>
+                <Draggable type="Content">
                     <Content onChanged={this.onContentChanged.bind(this)}/>
                 </Draggable>
-                <Draggable>
+                <Draggable type="Properties">
                     <Properties/>
                 </Draggable>
             </div>
