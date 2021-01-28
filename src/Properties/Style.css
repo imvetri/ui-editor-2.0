@@ -1,9 +1,6 @@
 .properties {
-    border: 1px solid #2C3134;
-     width: 165px;
-     font-size: 10px;
-     background: rgb(64, 64, 64);
-     color: rgba(255,255,255,0.5);
+     width: 200px;
+     border: 1px solid grey;
     }
     
     .properties input{
@@ -17,7 +14,7 @@
     }
     
     .properties > div {
-        border: 1px solid #2C3134;
+        border: 1px solid grey;
         padding: 8px;
     }
     
@@ -31,19 +28,19 @@
     }
     
     .properties .space{
-     border: 1px solid #2C3134;
+     border: 1px solid grey;
     }
     
     .less{
         height: 21px;
         width: 21px;
-        border: 1px solid #2C3134;
+        border: 1px solid grey;
     }
     
     .more{
         height: 21px;
         width: 21px;
-        border: 1px solid #2C3134;
+        border: 1px solid grey;
     }
     
     .properties select {
