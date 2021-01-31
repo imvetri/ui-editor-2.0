@@ -16,6 +16,7 @@ import Name from "./Components/Name";
 
 // Component Utilities
 import Draggable from "./Components/Utilities/Draggable";
+import Drawable from "./Components/Utilities/Drawable";
 
 class Index extends Component {
     constructor(props) {
@@ -62,6 +63,7 @@ class Index extends Component {
                 <Draggable type="Name">
                     <Name/>
                 </Draggable>
+                <Drawable/>
             </div>
         );
     }
