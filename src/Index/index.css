@@ -56,8 +56,7 @@ button i{
 select:focus, 
 button:hover,
 ul label:hover, 
-li:hover, 
-.content:hover {
+li:hover{
     color: #fff;
     background: rgb(43, 43, 43);
 }
