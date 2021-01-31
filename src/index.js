@@ -12,6 +12,7 @@ import Attributes from "./Components/Attributes";
 import Events from "./Components/Events";
 import Content from "./Components/Content";
 import Properties from "./Components/Properties";
+import Name from "./Components/Name";
 
 // Component Utilities
 import Draggable from "./Components/Utilities/Draggable";
@@ -57,6 +58,9 @@ class Index extends Component {
                 </Draggable>
                 <Draggable type="Properties">
                     <Properties/>
+                </Draggable>
+                <Draggable type="Properties">
+                    <Name/>
                 </Draggable>
             </div>
         );

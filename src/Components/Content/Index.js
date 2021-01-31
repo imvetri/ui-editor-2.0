@@ -10,19 +10,24 @@ class Content extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: ""
+            key: "",
+            value:""
         };
     }
 
-    updateChanges(e){
-        var types = this.state.types;
-        types[Number(e.currentTarget.getAttribute("index"))] = e.currentTarget.value;
+    updateChangesKey(e){
         this.setState({
-            types: types
+            key: e.currentTarget.value
         })
         this.onChange(e);
     }
 
+    updateChangesValue(e){
+        this.setState({
+            value: e.currentTarget.value
+        })
+        this.onChange(e);
+    }
 
     onChange(e){
         if(this.props.onChange){
@@ -32,11 +37,13 @@ class Content extends Component {
 
     render() {
         return (
-            <div className="panel">
+            <div className="content">
                 <header>Content</header>
-                <div className="list">
+                <div className="">
                     <textarea value={this.state.content} 
-                        onChange={this.updateChanges.bind(this)}/>
+                        onChange={this.updateChangesKey.bind(this)}/>
+                    <textarea value={this.state.content} 
+                        onChange={this.updateChangesValue.bind(this)}/>
                 </div>
             </div>
         );

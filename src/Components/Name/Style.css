@@ -10,14 +10,14 @@
     margin-bottom:5px;
 }
 
-.content{
+.panel{
     border:1px solid grey;
-    max-width: 420px;
+    max-width: 210px;
     padding:5px;
     box-sizing: border-box;
 }
 
-.content textarea:focus{
+.panel textarea:focus{
     border:2px lime solid;
     outline:none !important;
 }
