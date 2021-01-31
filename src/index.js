@@ -59,7 +59,7 @@ class Index extends Component {
                 <Draggable type="Properties">
                     <Properties/>
                 </Draggable>
-                <Draggable type="Properties">
+                <Draggable type="Name">
                     <Name/>
                 </Draggable>
             </div>
