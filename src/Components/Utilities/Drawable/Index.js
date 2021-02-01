@@ -13,6 +13,7 @@ import {get,set} from "../../../Utilities/Storage";
 
 class Drawable extends Component {
 
+    // Code generated using ui-editor. For more info visit https://imvetri.github.io/ui-editor -> Div Component
     constructor(props) {
         super(props);
         debugger;
