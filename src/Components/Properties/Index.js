@@ -7,6 +7,8 @@ import "./Style.css";
 
 class Properties extends Component {
 
+        // Code generated using ui-editor. For more info visit https://imvetri.github.io/ui-editor -> PropertiesControl Component
+
     constructor(props) {
         super(props);
         this.state = {
